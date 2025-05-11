@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Voice Translator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎙️ Tuelewane Translator</h1>
+
+    <div class="input-section">
+      <textarea id="textInput" rows="3" placeholder="Type or speak something..."></textarea>
+      <button id="micBtn">🎤/🗣️ Speak</button>
+      <p id="status"></p>
+    </div>
+
+    <div class="select-section">
+      <label for="inputLanguage">Input Language:</label>
+      <select id="inputLanguage">
+        <option value="en">English</option>
+        <option value="sw">Swahili</option>
+        <option value="fr">French</option>
+        <option value="sheng">Sheng</option>
+        <option value="pidgin">Pidgin</option>
+  
+      </select>
+    </div>
+
+    <div class="output-section">
+      <h3>Translation:</h3>
+      <p id="translatedText">Translation will appear here...</p>
+      <p class="phonetic" id="phoneticHint"></p>
+    </div>
+
+    <div class="speak-options">
+      <label for="voiceSelect">Voice:</label>
+      <select id="voiceSelect">
+        <option value="default">Default</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      <button id="speakBtn">🔊 Listen</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
